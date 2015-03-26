@@ -1,35 +1,37 @@
 package br.usp.icmc.ssc01032015;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 
 public class Tournament {
 	
 	private int rounds;
 	private int[] numberOfPlayers;
+	private int playerCount;
 	private ArrayList<Player> players;
 	
 	public Tournament(int rounds, int[] numberOfPlayers){
 		
 		this.rounds = rounds;
 		this.numberOfPlayers = numberOfPlayers;
+		this.playerCount = 0;
 		players = new ArrayList<Player>();
-		int k = 0;
 		for(int i = 0; i < numberOfPlayers.length; i++){
+			playerCount += numberOfPlayers[i];
 			for(int j = 0; j < numberOfPlayers[i];j++){
-				players.add(getPlayer(i+1, k++));
+				players.add(getPlayer(i+1));
 			}
 		}
 	}
 	
-	public Player getPlayer(int strategy, int id){
+	public Player getPlayer(int strategy){
 		
 		switch(strategy){
 		case 1:
-			
-			break;
+			return new P10();
 		case 2:
+			return new P0();
 			
-			break;
 		case 3:
 			
 			break;
@@ -41,13 +43,22 @@ public class Tournament {
 			break;
 		default:
 		}
-		return null;
+		return new Player();
 		
 	}
 	
-	public Player startTournament(){
-		
-		return null;
+	public Player[] startTournament(){
+
+		Player[] playersArray = new Player[playerCount];
+		Ranker r = new Ranker();
+
+		for (int i = 0; i < rounds; i ++)
+			round();
+
+		playersArray = players.toArray(playersArray);
+
+		Arrays.sort(playersArray, r);
+		return playersArray;
 	}
 	
 	public void encounter(Player p1, Player p2){
@@ -68,9 +79,9 @@ public class Tournament {
 	}
 	
 	public void round(){
-		
+		for (int i = 0; i < playerCount; i++)
+			for (int j = i+1; j < playerCount; j++)
+				encounter(players.get(i), players.get(j));
 	}
-	
-
 
 }
