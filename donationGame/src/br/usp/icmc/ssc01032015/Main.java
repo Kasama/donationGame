@@ -27,7 +27,6 @@ public class Main {
 		for (int i = 0; i < rank.length; i++) {
 			System.out.println(rank[i]);
 		}
-		
 	}
 
 }
