@@ -9,9 +9,9 @@ class Ranker implements Comparator<Player>{
 		if(p1.getTotalCash() == p2.getTotalCash())
 			return 0;
 		else if(p1.getTotalCash() < p2.getTotalCash())
-			return -1;
-		else if(p1.getTotalCash() > p2.getTotalCash())
 			return 1;
+		else if(p1.getTotalCash() > p2.getTotalCash())
+			return -1;
 		return 0;
 	}
 	

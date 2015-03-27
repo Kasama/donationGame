@@ -1,7 +1,5 @@
 package br.usp.icmc.ssc01032015;
 
-import java.util.Arrays;
-
 public class Main {
 
 	public static void main(String[] args) {
@@ -11,7 +9,7 @@ public class Main {
 		Player[] rank;
 
 		if(args.length < 1){
-			System.out.println("çeu fio da maein");
+			System.out.println("java br.usp.icmc.ssc01032015.Main <number of rounds> <number of players using strategy 1> [<number of players using strategy 2> [...]]");
 			return;
 		}
 
@@ -25,7 +23,7 @@ public class Main {
 		rank = tournament.startTournament();
 
 		for (int i = 0; i < rank.length; i++) {
-			System.out.println(rank[i]);
+			System.out.println(rank[i] + " - " + rank[i].getTotalCash());
 		}
 	}
 
