@@ -8,23 +8,23 @@ public class Tournament {
 	private int rounds;
 	private int[] numberOfPlayers;
 	private int playerCount;
-	private ArrayList<Player> players;
+	private ArrayList<Competitor> players;
 	
 	public Tournament(int rounds, int[] numberOfPlayers){
 		
 		this.rounds = rounds;
 		this.numberOfPlayers = numberOfPlayers;
 		this.playerCount = 0;
-		players = new ArrayList<Player>();
-		for(int i = 0; i < numberOfPlayers.length; i++){
-			playerCount += numberOfPlayers[i];
-			for(int j = 0; j < numberOfPlayers[i];j++){
+		players = new ArrayList<Competitor>();
+		for(int i = 0; i < this.numberOfPlayers.length; i++){
+			playerCount += this.numberOfPlayers[i];
+			for(int j = 0; j < this.numberOfPlayers[i];j++){
 				players.add(getPlayer(i+1));
 			}
 		}
 	}
 	
-	public Player getPlayer(int strategy){
+	public Competitor getPlayer(int strategy){
 		
 		switch(strategy){
 		case 1:
