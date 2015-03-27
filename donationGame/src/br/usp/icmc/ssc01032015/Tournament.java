@@ -28,18 +28,14 @@ public class Tournament {
 		
 		switch(strategy){
 		case 1:
-			return new P10();
+			return new PlayerWinner();
 		case 2:
-			return new P0();
-			
+			return new PlayerCollab();
 		case 3:
-			
-			break;
+			return new P0();
 		case 4:
-			
 			break;
 		case 5:
-			
 			break;
 		default:
 		}
@@ -47,9 +43,9 @@ public class Tournament {
 		
 	}
 	
-	public Player[] startTournament(){
+	public Competitor[] startTournament(){
 
-		Player[] playersArray = new Player[playerCount];
+		Competitor[] playersArray = new Competitor[playerCount];
 		Ranker r = new Ranker();
 
 		for (int i = 0; i < rounds; i ++)
@@ -61,7 +57,7 @@ public class Tournament {
 		return playersArray;
 	}
 	
-	public void encounter(Player p1, Player p2){
+	public void encounter(Competitor p1, Competitor p2){
 		
 		double p1Donation;
 		double p2Donation;
