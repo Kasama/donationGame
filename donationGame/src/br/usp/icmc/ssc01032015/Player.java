@@ -35,11 +35,4 @@ public class Player implements Competitor{
 		return this.cash;
 	}
 
-	@Override
-	public String toString(){
-
-		return "" + this.cash;
-
-	}
-
 }

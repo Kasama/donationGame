@@ -16,9 +16,9 @@ public class Tournament {
 		this.numberOfPlayers = numberOfPlayers;
 		this.playerCount = 0;
 		players = new ArrayList<Player>();
-		for(int i = 0; i < numberOfPlayers.length; i++){
-			playerCount += numberOfPlayers[i];
-			for(int j = 0; j < numberOfPlayers[i];j++){
+		for(int i = 0; i < this.numberOfPlayers.length; i++){
+			playerCount += this.numberOfPlayers[i];
+			for(int j = 0; j < this.numberOfPlayers[i];j++){
 				players.add(getPlayer(i+1));
 			}
 		}
@@ -28,18 +28,14 @@ public class Tournament {
 		
 		switch(strategy){
 		case 1:
-			return new P10();
+			return new PlayerWinner();
 		case 2:
-			return new P0();
-			
+			return new PlayerCollab();
 		case 3:
-			
-			break;
+			return new P0();
 		case 4:
-			
 			break;
 		case 5:
-			
 			break;
 		default:
 		}
