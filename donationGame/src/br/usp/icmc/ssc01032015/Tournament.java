@@ -15,11 +15,7 @@ public class Tournament {
 		this.rounds = rounds;
 		this.numberOfPlayers = numberOfPlayers;
 		this.playerCount = 0;
-<<<<<<< HEAD
 		players = new ArrayList<Competitor>();
-=======
-		players = new ArrayList<Player>();
->>>>>>> 41b0a54f562c52a1453de554c36af44294986095
 		for(int i = 0; i < this.numberOfPlayers.length; i++){
 			playerCount += this.numberOfPlayers[i];
 			for(int j = 0; j < this.numberOfPlayers[i];j++){
@@ -47,9 +43,9 @@ public class Tournament {
 		
 	}
 	
-	public Player[] startTournament(){
+	public Competitor[] startTournament(){
 
-		Player[] playersArray = new Player[playerCount];
+		Competitor[] playersArray = new Competitor[playerCount];
 		Ranker r = new Ranker();
 
 		for (int i = 0; i < rounds; i ++)
@@ -61,7 +57,7 @@ public class Tournament {
 		return playersArray;
 	}
 	
-	public void encounter(Player p1, Player p2){
+	public void encounter(Competitor p1, Competitor p2){
 		
 		double p1Donation;
 		double p2Donation;

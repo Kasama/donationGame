@@ -6,7 +6,7 @@ public class Main {
 
 		int rounds;
 		int[] numberOfPlayers;
-		Player[] rank;
+		Competitor[] rank;
 
 		if(args.length < 1){
 			System.out.println("java br.usp.icmc.ssc01032015.Main <number of rounds> <number of players using strategy 1> [<number of players using strategy 2> [...]]");
