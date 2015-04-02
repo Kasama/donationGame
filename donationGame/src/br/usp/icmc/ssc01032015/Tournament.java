@@ -30,16 +30,16 @@ public class Tournament {
 		case 1:
 			return new PlayerWinner();
 		case 2:
-			return new PlayerCollab();
+			return new PlayerCollabA();
 		case 3:
-			return new P0();
+			return new PlayerCollabB();
 		case 4:
-			break;
+			return new PlayerCollabC();
 		case 5:
-			break;
+			return new PlayerCollabD();
 		default:
 		}
-		return new Player();
+		return new PlayerCollab();
 		
 	}
 	
