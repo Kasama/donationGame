@@ -5,7 +5,7 @@ public class PlayerWinner extends Player {
 	@Override
 	public String toString(){
 
-		return "SHHPASSWORD";
+		return "ATheNewSoN";
 
 	}
 

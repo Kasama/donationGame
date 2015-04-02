@@ -21,12 +21,12 @@ public class Player implements Competitor{
 
 	@Override
 	public void informDonationFrom(Competitor c, double donation) {
-		ammounts.add(donation);
 		return;		
 	}
 
 	@Override
 	public void addCash(double amount) {
+		ammounts.add(this.cash);
 		this.cash += amount;
 	}
 
