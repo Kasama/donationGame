@@ -32,11 +32,15 @@ public class Tournament {
 		case 2:
 			return new PlayerCollab();
 		case 3:
-			return new P0();
+			return new PFred();
 		case 4:
-			break;
+			return new P10();
 		case 5:
-			break;
+			return new P0();
+		case 6:
+			return new P7();
+		case 7:
+			return new PX();
 		default:
 		}
 		return new Player();

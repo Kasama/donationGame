@@ -11,8 +11,7 @@ public class PlayerCollab extends Player {
 	}
 
 	@Override
-	public String toString() {
-		return "ANON";
+	public String toString(){
+		return "Collab"
 	}
-
 }
