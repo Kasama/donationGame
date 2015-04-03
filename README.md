@@ -6,6 +6,7 @@ This is a simple implementation of a [donation game] (https://docs.google.com/do
 
 ##Download
 ```bash
+cd /clone/folder
 git clone https://github.com/Kasama/donationGame
 ```
 after that you should have a folder called donationGame, containing the repository clone
@@ -13,14 +14,14 @@ after that you should have a folder called donationGame, containing the reposito
 ##Compilation
 
 ```bash
-cd /clone/folder
+cd /clone/folder/donationGame
 javac -d donationGame/bin donationGame/src/br/usp/icmc/ssc01032015/*.java
 ```
 
 ##Running
 
 ```bash
-cd /clone/folder
+cd /clone/folder/donationGame
 java -cp donationGame/bin/ br.usp.icmc.ssc01032015.Main <number of rounds> <number of players using strategy 1> [<number of players using strategy 2> [...]]
 ```
 
