@@ -10,7 +10,7 @@ public class PFred extends Player {
 	}
 	@Override
 	public double declareDonationTo(Competitor c) {
-		return lastDonatinRecived(c);
+		return lastDonation;
 	}
 
 	@Override
