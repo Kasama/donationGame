@@ -4,6 +4,12 @@
 
 This is a simple implementation of a [donation game] (https://docs.google.com/document/d/15-psEzuaBd3JNpqLvNXAW3pozQSDfF-XBxzaYrQi9YU/edit) for a OOP class
 
+##Download
+```bash
+git clone http://github.com/Kasama/donationGame
+```
+after that you should have a folder called donationGame, containing the repository clone
+
 ##Compilation
 
 ```bash
