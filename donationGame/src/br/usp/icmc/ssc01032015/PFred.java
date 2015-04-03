@@ -2,16 +2,15 @@ package br.usp.icmc.ssc01032015;
 
 public class PFred extends Player {
 
+	private double lastDonation = 0;
+	
+	@Override
+	public void informDonationFrom(Competitor c, double donation){
+		this.lastDonation = donation;
+	}
 	@Override
 	public double declareDonationTo(Competitor c) {
 		return lastDonatinRecived(c);
-	}
-
-	private double lastDonatinRecived(Competitor c){
-		if(this.ammounts.isEmpty()) 
-			return 0d;
-		else
-			return this.ammounts.get(this.ammounts.size() - 1);
 	}
 
 	@Override
