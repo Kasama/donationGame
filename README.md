@@ -6,7 +6,7 @@ This is a simple implementation of a [donation game] (https://docs.google.com/do
 
 ##Download
 ```bash
-git clone http://github.com/Kasama/donationGame
+git clone https://github.com/Kasama/donationGame
 ```
 after that you should have a folder called donationGame, containing the repository clone
 
