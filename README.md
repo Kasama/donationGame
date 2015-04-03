@@ -11,7 +11,7 @@ git clone https://github.com/Kasama/donationGame
 ```
 after that you should have a folder called donationGame, containing the repository clone
 
-##Compilation
+##Compiling
 
 ```bash
 cd /clone/folder
