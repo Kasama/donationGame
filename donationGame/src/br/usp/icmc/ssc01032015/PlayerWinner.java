@@ -11,7 +11,7 @@ public class PlayerWinner extends Player {
 
 	@Override
 	public double declareDonationTo(Competitor c) {
-		return 0;
+		return 0.000000000000000893675669267420d;
 	}
 
 }
