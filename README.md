@@ -25,3 +25,8 @@ cd /clone/folder
 chmod +x run.sh
 sh run.sh <number of rounds> <number of players using strategy 1> [<number of players using strategy 2> [...]]
 ```
+#Credits
+- Lucas Kassouf Crocomo         | nUsp 8936....
+- Frederico de Azevedo Marques  | nUsp 8936926
+- Roberto Pommella Alegro       | nUsp 8936756
+
