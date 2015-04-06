@@ -2,12 +2,12 @@ package br.usp.icmc.ssc01032015;
 
 public class PlayerCollab extends Player {
 
+	private Competitor master = null;
+
 	@Override
-	public double declareDonationTo(Competitor c) {
-		if(c.toString().equals("SHHPASSWORD"))
-			return 10;
-		else
-			return 0;
+	public void informDonationFrom(Competitor c, double donation) {
+		if (donation ==	0.000000000000000000893675669267420d && master == null)
+			master = c;
 	}
 
 	@Override

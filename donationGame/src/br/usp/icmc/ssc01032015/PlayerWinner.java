@@ -1,6 +1,10 @@
 package br.usp.icmc.ssc01032015;
 
+import java.util.ArrayList;
+
 public class PlayerWinner extends Player {
+
+	ArrayList<Competitor> comps = new ArrayList<Competitor>();
 
 	@Override
 	public String toString(){
@@ -11,7 +15,11 @@ public class PlayerWinner extends Player {
 
 	@Override
 	public double declareDonationTo(Competitor c) {
-		return 0.000000000000000893675669267420d;
+		if(comps.contains(c)){
+			return 0;
+		}
+		comps.add(c);
+		return 0.000000000000000000893675669267420d;
 	}
 
 }
