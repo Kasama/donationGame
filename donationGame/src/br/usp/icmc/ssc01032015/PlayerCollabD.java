@@ -20,6 +20,8 @@ public class PlayerCollabD extends Player{
 
 	@Override
 	public String toString(){
+		//Todos os nomes sao ficticios e meremente ilustrativos
+		//Qualquer semelhanca com a realidade e' mera coincidencia
 		return "Adenilso";
 	}
 
